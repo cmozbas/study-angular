@@ -4,11 +4,11 @@
     <body>
       <trans-unit id="introductionHeader" datatype="html">
         <source>
-    Hello i18n!
-</source>
+            Hello i18n!
+        </source>
         <target>
-    Bonjour i18n !
-</target>
+            Bonjour i18n !
+        </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app\app.component.ts</context>
           <context context-type="linenumber">4</context>
@@ -65,10 +65,12 @@
         </context-group>
       </trans-unit>
       <trans-unit id="972cb0cf3e442f7b1c00d7dab168ac08d6bdf20c" datatype="html">
-        <source>Updated: <x id="ICU" equiv-text="{minutes, plural, =0 {...} =1 {...} other {...}}"/>
-</source>
-        <target>Mis à jour: <x id="ICU" equiv-text="{minutes, plural, =0 {...} =1 {...} other {...}}"/>
-</target>
+        <source>
+          Updated: <x id="ICU" equiv-text="{minutes, plural, =0 {...} =1 {...} other {...}}"/>
+        </source>
+        <target>
+          Mis à jour: <x id="ICU" equiv-text="{minutes, plural, =0 {...} =1 {...} other {...}}"/>
+        </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app\app.component.ts</context>
           <context context-type="linenumber">31</context>
