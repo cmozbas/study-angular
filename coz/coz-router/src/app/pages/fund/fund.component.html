@@ -1,0 +1,9 @@
+<h3>All funds</h3>
+<div *ngIf="funds">
+  <table>
+    <tr *ngFor="let fund of funds">
+      <td>{{ fund.name }}</td>
+      <td><a [routerLink]="['/fund/edit', fund.id]" routerLinkActive="true">Edit</a></td>
+    </tr>
+  </table>
+</div>

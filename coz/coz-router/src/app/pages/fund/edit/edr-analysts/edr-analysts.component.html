@@ -1,0 +1,32 @@
+<h3>Edr Analysts</h3>
+<div [formGroup]="parentFormGroup">
+  <div formArrayName="edrAnalysts" class="well well-lg">
+    <div *ngFor="let edrAnalyst of parentFormGroup.controls.edrAnalysts.controls; let i=index" [formGroupName]="i" >
+      <p>
+        <span class="ed-anl-tit">Edr Analyst #{{i + 1}}</span>
+        <span class="ed-anl-rem-btn" (click)="remove(i)"> Remove </span>
+      </p>
+      <div class="form-group row">
+        <label for="id-for-person" class="col-3 col-form-label">Person</label>
+        <div class="col-9">
+          <input class="form-control" formControlName="person" type="text" id="id-for-person">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="id-for-beginDate" class="col-3 col-form-label">Begin Date</label>
+        <div class="col-9">
+          <input class="form-control" formControlName="beginDate" type="text" id="id-for-beginDate">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="id-for-endDate" class="col-3 col-form-label">End Date</label>
+        <div class="col-9">
+          <input class="form-control" formControlName="endDate" type="text" id="id-for-endDate">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div>
+  <button (click)="add()" type="button">Add new</button>
+</div>

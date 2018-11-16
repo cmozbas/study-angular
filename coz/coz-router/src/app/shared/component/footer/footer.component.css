@@ -1,0 +1,23 @@
+
+.example-footer {
+    z-index: 9;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-left: 45px;
+  }
+  
+.footer-list{
+    float: left;
+    /* border: 1px solid blue;
+    border-radius: 50px;
+    background-color: #c6d5ff; */
+}
+
+.footer-list-btn{
+    z-index: 99;
+    background-color: #00539a;
+    color: white;
+    font-size: 12px;
+}

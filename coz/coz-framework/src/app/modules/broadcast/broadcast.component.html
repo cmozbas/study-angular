@@ -1,0 +1,98 @@
+
+<div>
+    <a [routerLink] = "['/']">HOME</a> 
+</div>
+<br />
+<button (click)="openAll()">Open All</button>
+<button (click)="closeAll()">Close All</button>
+<br />
+<br />
+<br />
+
+<h2> Scan </h2>
+<button (click) = "toggle('scan')">
+    <span *ngIf="!scan">Show</span>
+    <span *ngIf="scan">Hide</span>
+</button>
+<broadcast-scan *ngIf="scan"></broadcast-scan>
+
+<hr />
+
+<h2> Fork Join </h2>
+<button (click) = "toggle('forkjoin')">
+    <span *ngIf="!forkjoin">Show</span>
+    <span *ngIf="forkjoin">Hide</span>
+</button>
+<broadcast-forkjoin *ngIf="forkjoin"></broadcast-forkjoin>
+
+<hr />
+
+<h2> Merge Map </h2>
+<button (click) = "toggle('mergemap')">
+    <span *ngIf="!mergemap">Show</span>
+    <span *ngIf="mergemap">Hide</span>
+</button>
+<broadcast-mergemap *ngIf="mergemap"></broadcast-mergemap>
+
+<hr />
+
+<h2> Switch Map </h2>
+<button (click) = "toggle('switchmap')">
+    <span *ngIf="!switchmap">Show</span>
+    <span *ngIf="switchmap">Hide</span>
+</button>
+<broadcast-switchmap *ngIf="switchmap"></broadcast-switchmap>
+
+<hr />
+
+<h2> Flat Map </h2>
+<button (click) = "toggle('flatmap')">
+    <span *ngIf="!flatmap">Show</span>
+    <span *ngIf="flatmap">Hide</span>
+</button>
+<broadcast-flatmap *ngIf="flatmap"></broadcast-flatmap>
+
+<hr />
+
+<h2> Map </h2>
+<button (click) = "toggle('map')">
+    <span *ngIf="!map">Show</span>
+    <span *ngIf="map">Hide</span>
+</button>
+<broadcast-map *ngIf="map"></broadcast-map>
+
+<hr />
+
+<h2> Observable </h2>
+<button (click) = "toggle('observable')">
+    <span *ngIf="!observable">Show</span>
+    <span *ngIf="observable">Hide</span>
+</button>
+<broadcast-observable *ngIf="observable"></broadcast-observable>
+
+<hr />
+
+<h2> Behaviour Subject </h2>
+<button (click) = "toggle('behaviourSubject')">
+    <span *ngIf="!behaviourSubject">Show</span>
+    <span *ngIf="behaviourSubject">Hide</span>
+</button>
+<broadcast-behaviour-subject *ngIf="behaviourSubject"></broadcast-behaviour-subject>
+
+<hr />
+
+<h2> Replay Subject </h2>
+<button (click) = "toggle('replaySubject')">
+    <span *ngIf="!replaySubject">Show</span>
+    <span *ngIf="replaySubject">Hide</span>
+</button>
+<broadcast-replay-subject *ngIf="replaySubject"></broadcast-replay-subject>
+
+<hr />
+
+<h2> Subject </h2>
+<button (click) = "toggle('subject')">
+    <span *ngIf="!subject">Show</span>
+    <span *ngIf="subject">Hide</span>
+</button>
+<broadcast-subject *ngIf="subject"></broadcast-subject>

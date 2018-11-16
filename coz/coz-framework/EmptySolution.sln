@@ -1,0 +1,87 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "e2e", "e2e", "{6D50D4E4-A20D-40D5-858B-31BEF559C259}"
+	ProjectSection(SolutionItems) = preProject
+		e2e\app.e2e-spec.ts = e2e\app.e2e-spec.ts
+		e2e\tsconfig.json = e2e\tsconfig.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{DD1E2C5E-CD94-4AAD-A191-36268737865B}"
+	ProjectSection(SolutionItems) = preProject
+		src\favicon.ico = src\favicon.ico
+		src\index.html = src\index.html
+		src\main.js = src\main.js
+		src\main.js.map = src\main.js.map
+		src\main.ts = src\main.ts
+		src\styles.css = src\styles.css
+		src\systemjs-angular-loader.js = src\systemjs-angular-loader.js
+		src\systemjs.config.extras.js = src\systemjs.config.extras.js
+		src\systemjs.config.js = src\systemjs.config.js
+		src\tsconfig.json = src\tsconfig.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "app", "app", "{93835A27-9424-4AFC-99E4-F8DBE32B2537}"
+	ProjectSection(SolutionItems) = preProject
+		src\app\app.component.js = src\app\app.component.js
+		src\app\app.component.js.map = src\app\app.component.js.map
+		src\app\app.component.spec.js = src\app\app.component.spec.js
+		src\app\app.component.spec.js.map = src\app\app.component.spec.js.map
+		src\app\app.component.spec.ts = src\app\app.component.spec.ts
+		src\app\app.component.ts = src\app\app.component.ts
+		src\app\app.module.js = src\app\app.module.js
+		src\app\app.module.js.map = src\app\app.module.js.map
+		src\app\app.module.ts = src\app\app.module.ts
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{EB4858CB-6BA7-4132-BE47-DDCF5AC103D0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "modules", "modules", "{24147E9A-18CD-45C6-A6A0-C61A922D910F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "services", "services", "{13D523BF-1EF9-4BA3-AB19-A3F1518D0D5D}"
+	ProjectSection(SolutionItems) = preProject
+		src\app\services\framework.service.js = src\app\services\framework.service.js
+		src\app\services\framework.service.js.map = src\app\services\framework.service.js.map
+		src\app\services\framework.service.ts = src\app\services\framework.service.ts
+		src\app\services\message.service.js = src\app\services\message.service.js
+		src\app\services\message.service.js.map = src\app\services\message.service.js.map
+		src\app\services\message.service.ts = src\app\services\message.service.ts
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "layout", "layout", "{D1C2EB53-4C57-48A8-B0AD-3616C72D3F04}"
+	ProjectSection(SolutionItems) = preProject
+		src\app\modules\layout\layout.component.html = src\app\modules\layout\layout.component.html
+		src\app\modules\layout\layout.component.js = src\app\modules\layout\layout.component.js
+		src\app\modules\layout\layout.component.js.map = src\app\modules\layout\layout.component.js.map
+		src\app\modules\layout\layout.component.ts = src\app\modules\layout\layout.component.ts
+		src\app\modules\layout\layout.module.js = src\app\modules\layout\layout.module.js
+		src\app\modules\layout\layout.module.js.map = src\app\modules\layout\layout.module.js.map
+		src\app\modules\layout\layout.module.ts = src\app\modules\layout\layout.module.ts
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "message", "message", "{CA0E04B5-BB50-4A8F-8E6A-066438EC691F}"
+	ProjectSection(SolutionItems) = preProject
+		src\app\modules\message\message.component.html = src\app\modules\message\message.component.html
+		src\app\modules\message\message.component.js = src\app\modules\message\message.component.js
+		src\app\modules\message\message.component.js.map = src\app\modules\message\message.component.js.map
+		src\app\modules\message\message.component.ts = src\app\modules\message\message.component.ts
+		src\app\modules\message\message.module.js = src\app\modules\message\message.module.js
+		src\app\modules\message\message.module.js.map = src\app\modules\message\message.module.js.map
+		src\app\modules\message\message.module.ts = src\app\modules\message\message.module.ts
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{93835A27-9424-4AFC-99E4-F8DBE32B2537} = {DD1E2C5E-CD94-4AAD-A191-36268737865B}
+		{EB4858CB-6BA7-4132-BE47-DDCF5AC103D0} = {DD1E2C5E-CD94-4AAD-A191-36268737865B}
+		{24147E9A-18CD-45C6-A6A0-C61A922D910F} = {93835A27-9424-4AFC-99E4-F8DBE32B2537}
+		{13D523BF-1EF9-4BA3-AB19-A3F1518D0D5D} = {93835A27-9424-4AFC-99E4-F8DBE32B2537}
+		{D1C2EB53-4C57-48A8-B0AD-3616C72D3F04} = {24147E9A-18CD-45C6-A6A0-C61A922D910F}
+		{CA0E04B5-BB50-4A8F-8E6A-066438EC691F} = {24147E9A-18CD-45C6-A6A0-C61A922D910F}
+	EndGlobalSection
+EndGlobal

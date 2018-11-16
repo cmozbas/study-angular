@@ -1,0 +1,12 @@
+
+<form class="fn-edit-form" [formGroup]="fundForm" novalidate>
+
+  <app-fund-edit-general [parentFormGroup]="fundForm" [fund]="fund"></app-fund-edit-general>
+  
+  <app-edr-analysts [parentFormGroup]="fundForm"></app-edr-analysts>
+
+</form>
+
+<div>
+  <span>Result: {{ fundForm.value | json }}</span>
+</div>

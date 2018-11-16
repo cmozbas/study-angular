@@ -1,0 +1,18 @@
+
+<div>
+    <a [routerLink] = "['/']">HOME</a> 
+</div>
+
+ <p *ngIf="!incomingMessage"> You don't have any message </p>
+<p *ngIf="incomingMessage"> Here is your message : </p>
+
+<p *ngIf="incomingMessage"> From: {{ incomingMessage.from }} </p>
+ <p *ngIf="incomingMessage"> Text: {{ incomingMessage.message }} </p>  
+
+ <input type="text" [(ngModel)]="message" />
+ <br />
+ <br />
+<button (click) = "sendMessage()"> Send a message </button>
+ <br />
+ <br />
+<button (click) = "frameworkTest()"> Test Framework </button>

@@ -1,0 +1,17 @@
+
+<p class="bc-explain"> 
+    With switch map, we simply put a queue of observable call.
+    <br />
+    At the end of the switch we subscribe. We can use the switchmap many time. We should trigger 
+    all the observable that we order in switchmap
+    <br />
+    If one of the observable is not triggered then all the other won't work.
+    <br />
+    It's useful on any autocomplete ajax call for example.
+    <br />
+</p>
+
+
+<button (click)="send()">  Send data </button>
+
+<p> Recieved data: {{ message }} </p>

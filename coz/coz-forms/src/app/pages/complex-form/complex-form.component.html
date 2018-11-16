@@ -1,0 +1,17 @@
+
+
+<form [formGroup]="fundForm" novalidate>
+  <div>
+    <p>
+      Name: 
+      <input formControlName="name" />
+    </p>
+  </div>
+  
+  <app-complex-form-share-class [parentFormGroup]="fundForm"></app-complex-form-share-class>
+
+</form>
+
+<div>
+  <span>Result: {{ fundForm.value | json }}</span>
+</div>

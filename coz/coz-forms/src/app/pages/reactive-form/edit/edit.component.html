@@ -1,0 +1,21 @@
+
+<div>
+  <form [formGroup]="fundForm" (onSubmit)="submitForm()" novalidate>
+    <div>
+      <label class="center-block">Name:
+        <input class="form-control" formControlName="name">
+      </label>
+    </div>
+    <div>
+      <button type="submit">Save</button>
+    </div>
+  </form>
+</div>
+<div>
+  <button (click)="resetName()">Reset</button>
+</div>
+<div>
+  <p>
+    Result: {{ fundForm.value | json }}
+  </p>
+</div>

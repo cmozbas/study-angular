@@ -1,0 +1,24 @@
+
+<p class="bc-explain"> 
+    With flat map we can subscribe to an observable which is inside an observable. 
+    <br />
+     Component has Tweets observable. Tweet contain LikeAction observable. So we use the flat map to subscribe the LikeAction 
+     observable of each tweet
+    <br />
+    We subscribe to tweets in subscribe and also LikeAction 
+    <br />
+</p>
+
+<div>
+    <button (click) = "like()"> Like </button> 
+    <span>{{ likeCount }}</span>
+</div>
+<br />
+<div>
+    <button (click) = "unlike()"> Unlike </button> 
+    <span>{{ unlikeCount }}</span>
+</div>
+<br />
+<div>
+    <textarea class="bc-textarea"> {{ consoleMessage }} </textarea>
+</div>

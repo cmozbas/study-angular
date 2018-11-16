@@ -1,0 +1,14 @@
+<p>
+  reactive-form works!
+</p>
+<div>
+  <button (click)="displayEdit()">Edit</button>
+</div>
+
+<div *ngIf="isEdit">
+  <app-edit></app-edit>
+</div>
+
+<ngb-datepicker #dp (navigate)="date = $event.next"></ngb-datepicker>
+
+<ngb-timepicker [(ngModel)]="time"></ngb-timepicker>

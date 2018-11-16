@@ -1,0 +1,20 @@
+
+<p *ngIf="loading">loading please wait...</p>
+
+<table>
+  <tr *ngFor="let artist of artists">
+    <td>{{artist.Id}}</td>
+    <td>{{artist.Name}}</td>
+  </tr>
+</table>
+
+<table>
+  <tr *ngFor="let top of toplist">
+    <td>{{top.SongTitleId}}</td>
+    <td>{{top.Name}}</td>
+    <td>{{top.Title}}</td>
+    <td>{{top.numberOfPlay}}</td>
+  </tr>
+</table>
+
+

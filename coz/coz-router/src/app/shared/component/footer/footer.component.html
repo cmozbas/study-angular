@@ -1,0 +1,10 @@
+<div>
+  <button class="footer-list footer-list-btn" mat-icon-button (click)="toggleFooter()"><mat-icon>{{btnTitle}}</mat-icon></button>
+</div>
+<mat-toolbar  class="example-footer" [style.display]="isShow? 'inherit' : 'none'">
+  <div *ngIf="fillerNav">
+    <mat-nav-list class="footer-list" *ngFor="let nav of fillerNav">
+      <a mat-list-item routerLink="{{nav}}">{{nav}}</a>
+    </mat-nav-list>
+  </div>
+</mat-toolbar>
